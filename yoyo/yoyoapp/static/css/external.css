@@ -1,0 +1,8 @@
+#carouselExample {
+    height: 300px; /* Set the height of the carousel */
+    overflow: hidden; /* Prevents overflow of images */
+}
+.carousel-item img {
+    height: 300px; /* Ensures images fit the height */
+    object-fit: cover; /* Ensures images cover the space without distortion */
+}

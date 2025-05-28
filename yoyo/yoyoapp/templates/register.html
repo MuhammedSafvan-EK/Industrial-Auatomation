@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Object Counter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* Light text color */
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #1e1e1e; /* Slightly lighter dark for the form */
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            background-color: #2a2a2a; /* Darker input background */
+            border: 1px solid #3a3a3a;
+            color: #ffffff; /* Input text color */
+        }
+        .form-control:focus {
+            background-color: #2a2a2a;
+            border-color: #1db954; /* Spotify green */
+            box-shadow: 0 0 0 0.2rem rgba(29, 185, 84, 0.25);
+        }
+        .btn-primary {
+            background-color: #1db954; /* Spotify green */
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #1aa34a; /* Slightly darker green */
+        }
+        .text-center {
+            margin-top: 20px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Create an Account</h2>
+    <form method="POST" action="{% url 'register' %}">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Confirm_Password</label>
+            <input type="password" class="form-control" id="Confirm_Password" name="Confirm_Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+    </form>
+    <div class="text-center">
+        <p>Already have an account? <a href="/login/" style="color: #1db954;">Login</a></p>
+    </div>
+</div>
+<div class="footer">
+    <p>&copy; 2024 Object Counter. All rights reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
