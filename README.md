@@ -106,3 +106,7 @@ This project is licensed under the MIT License.
 
 # Device Image
 <img width="465" height="398" alt="image" src="https://github.com/user-attachments/assets/08e6176c-c5d8-48c8-90b8-449ee7f42ada" />
+<img width="891" height="650" alt="image" src="https://github.com/user-attachments/assets/ced1ecf4-678c-4a23-b540-b20ad318c142" />
+<img width="896" height="501" alt="image" src="https://github.com/user-attachments/assets/d796e462-3ece-4701-bc42-e17125976bd7" />
+
+
